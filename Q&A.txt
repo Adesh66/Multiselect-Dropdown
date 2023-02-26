@@ -1,0 +1,41 @@
+What are some ways to prevent unnecessary re-renders in React, and when would you use each technique?
+    Memoization  is a way to prevent unnecessary re-renders in React, it's mean if nothing is changed no need ro rerender.
+    1. useMemo - hook, return the momoized values
+    2. usecallback - hook, to memoize the function
+    3. memo -  HOC, to memoize the full component
+    4. PureComponent - class based compnent 
+    5. shouldComponentUpdate - class based normal component
+
+What are some practical uses of React Context and React Hooks?
+    - when we have less features or a small application or code is being written by a small team, we can go with contextapi.
+    - when the project architecture is complex and if we have different modules it would be triccy to manage multicontnet providers, so in that case we should go with redux.
+    for example , LanguageContextProvider(internationalization), ThemeContextProvider, AuthContextProvder,AppConfigContextProvider,
+
+What are some other ways caching could be implemented for Part I? What are the differences and why might you choose one over the other?
+    1. React Query 
+    2. custom function to mimic the cache behavior
+    3. MemoizedFunction to keep the data for the same route 
+    4. lodash library function for Memoization
+    5. CDN Caching
+
+What are some practical steps to prevent XSS and CSRF?
+    1. No use of dangerouslySetInnerHTML for sensitive data. use dompurify to sanitize the data
+    2. Controlled component
+    3. Validation is required for the api calls for origin and headers.
+
+When using traditional session cookies, what are the primary security concerns and mitigation techniques you might use for common attacks?
+    1. Attacker can access the user's session cookie and can impersonate that.
+    2. secure cookie can be helpful to presvent CSRF attacks. 
+
+What are some advantages and disadvantages to using JWT for authorization and authentication in a web application?
+    Advantage:
+        JWT is secure in terms of data tampering, it ensure that the data contained within the token is not compromised.
+
+    disadvantage:
+       Size: JWTs can be quite large, especially when they contain a lot of user data.
+
+What are some new/interesting Web (browser), React, or Node.js features you are interested in, or have used recently for the first time?
+    1. Functional paradigm approach is quite good for me to write the code in React. It's handy and simple to maintain the architecture and code flow.
+    2. SSR
+    3. HTMLNATIVE APis
+
